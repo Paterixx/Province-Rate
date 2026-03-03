@@ -48,6 +48,17 @@ body {
   text-decoration: none;
   font-weight: 800;
   letter-spacing: 0.4px;
+  font-size: 1.12rem;
+  transition: transform 0.2s ease, text-shadow 0.25s ease;
+}
+
+.brand-highlight {
+  color: #7fa6ff;
+}
+
+.brand:hover {
+  transform: translateY(-1px);
+  text-shadow: 0 0 16px rgb(125 160 255 / 45%);
 }
 
 .main-nav {
@@ -78,6 +89,26 @@ body {
   border-color: #32447a;
 }
 
+.nav-link:active,
+.dropdown-toggle:active,
+.login-btn:active,
+.details-link:active,
+.vk-icon:active,
+.dropdown-menu a:active {
+  transform: translateY(1px) scale(0.99);
+}
+
+.nav-link:focus-visible,
+.dropdown-toggle:focus-visible,
+.login-btn:focus-visible,
+.details-link:focus-visible,
+.dropdown-menu a:focus-visible,
+.agreement-link:focus-visible,
+.vk-icon:focus-visible {
+  outline: 2px solid #7fa6ff;
+  outline-offset: 2px;
+}
+
 .dropdown {
   position: relative;
 }
@@ -99,7 +130,8 @@ body {
   margin: 0;
   padding: 10px;
   list-style: none;
-  width: 220px;
+  width: max-content;
+  min-width: 168px;
   background: linear-gradient(160deg, rgb(24 33 59 / 96%), rgb(18 23 42 / 96%));
   border: 1px solid #395094;
   border-radius: 14px;
@@ -120,12 +152,13 @@ body {
 
 .dropdown-menu a {
   display: flex;
+  white-space: nowrap;
   align-items: center;
   color: var(--text);
   text-decoration: none;
   padding: 9px 11px;
   border-radius: 9px;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .dropdown-menu a::before {
@@ -140,6 +173,7 @@ body {
 
 .dropdown-menu a:hover {
   background: var(--surface-soft-2);
+  transform: translateX(4px);
 }
 
 .login-btn {
@@ -150,6 +184,13 @@ body {
   border-radius: 10px;
   font-weight: 600;
   box-shadow: 0 10px 24px rgb(77 125 255 / 35%);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+  box-shadow: 0 12px 28px rgb(77 125 255 / 44%);
 }
 
 .hero-section {
@@ -180,6 +221,13 @@ h1 {
   border-radius: 16px;
   padding: 22px;
   box-shadow: 0 18px 28px rgb(4 8 18 / 35%);
+  transition: transform 0.24s ease, box-shadow 0.24s ease;
+}
+
+.feature-card:hover,
+.feature-card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 34px rgb(4 8 18 / 48%);
 }
 
 .feature-card h2 {
@@ -238,6 +286,14 @@ tbody tr:nth-child(odd) {
   background: #141d35;
 }
 
+tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #1b2848;
+}
+
 .rating {
   display: inline-flex;
   align-items: center;
@@ -246,15 +302,44 @@ tbody tr:nth-child(odd) {
   font-weight: 600;
 }
 
+.table-cta-wrap {
+  margin-top: -1px;
+  padding: 12px 14px;
+  border: 1px solid #31446f;
+  border-top: 0;
+  border-radius: 0 0 14px 14px;
+  background: linear-gradient(180deg, #121a31, #10182c);
+  display: flex;
+  justify-content: flex-end;
+}
+
 .details-link {
-  margin-top: 18px;
-  display: inline-block;
-  color: #b9cbff;
+  margin-top: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #d7e2ff;
   text-decoration: none;
+  font-weight: 600;
+  background: linear-gradient(120deg, rgb(77 125 255 / 25%), rgb(98 140 255 / 8%));
+  border: 1px solid rgb(126 159 255 / 45%);
+  padding: 12px 16px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.details-link-arrow {
+  transition: transform 0.2s ease;
 }
 
 .details-link:hover {
-  text-decoration: underline;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgb(77 125 255 / 25%);
+  background: linear-gradient(120deg, rgb(77 125 255 / 34%), rgb(98 140 255 / 16%));
+}
+
+.details-link:hover .details-link-arrow {
+  transform: translateX(3px);
 }
 
 .site-footer {
@@ -294,14 +379,22 @@ tbody tr:nth-child(odd) {
   justify-content: center;
   font-size: 13px;
   box-shadow: 0 8px 18px rgb(47 128 255 / 35%);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vk-icon:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgb(47 128 255 / 45%);
 }
 
 .agreement-link {
   color: #b9cbff;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .agreement-link:hover {
+  color: #d7e2ff;
   text-decoration: underline;
 }
 
