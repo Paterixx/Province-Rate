@@ -163,47 +163,15 @@
             </table>
           </div>
 
-          <a href="#" class="details-link" id="openDetailsModal">
-            <span class="details-link-label">Перейти к подробному рейтингу администрации</span>
-            <span class="details-link-arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="table-cta-wrap">
+            <a href="all-admins-rating.html" class="details-link">
+              <span class="details-link-label">Перейти к подробному рейтингу администрации</span>
+              <span class="details-link-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
         </div>
       </section>
     </main>
-
-    <div class="modal-backdrop" id="detailsModal" aria-hidden="true">
-      <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-        <button class="modal-close" type="button" id="closeDetailsModal" aria-label="Закрыть окно">✕</button>
-        <h3 id="modalTitle">Подробный рейтинг администрации</h3>
-        <p class="modal-subtitle">Выберите сервер и посмотрите актуальную аналитику без лишних переходов.</p>
-
-        <div class="modal-content-grid">
-          <div>
-            <label class="modal-label" for="serverSelect">Сервер</label>
-            <select id="serverSelect" class="modal-select">
-              <option>Province #1</option>
-              <option>Province #2</option>
-              <option>Province #3</option>
-              <option>Province #4</option>
-              <option>Province #5</option>
-              <option>Province #6</option>
-              <option>Province #7</option>
-            </select>
-          </div>
-
-          <aside class="modal-info-card" aria-label="Подсказка по рейтингу">
-            <h4>Что внутри</h4>
-            <ul>
-              <li>Расширенный список администрации по ролям.</li>
-              <li>Динамика изменения оценок за последние недели.</li>
-              <li>Фильтры по должности и активности.</li>
-            </ul>
-          </aside>
-        </div>
-
-        <button class="modal-action" type="button">Открыть рейтинг сервера</button>
-      </section>
-    </div>
 
     <footer class="site-footer">
       <div class="container footer-wrap">
