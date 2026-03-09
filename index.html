@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ProvinceRate — Рейтинги игроков MTA Province</title>
+    <title>ProvinceRate — Профиль участника рейтинга</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +18,7 @@
         <a class="brand" href="#">ProvinceRate</a>
 
         <nav class="main-nav" aria-label="Основная навигация">
-          <a href="#" class="nav-link active">Главная</a>
+          <a href="#" class="nav-link">Главная</a>
 
           <div class="dropdown">
             <button class="dropdown-toggle" type="button" aria-expanded="false">
@@ -57,115 +57,146 @@
       </div>
     </header>
 
-    <main>
-      <section class="hero-section">
-        <div class="container hero-grid">
-          <div>
-            <h1>ProvinceRate — честные рейтинги игроков MTA Province</h1>
-            <p class="hero-text">
-              Мы собираем отзывы игроков и формируем независимые рейтинги по категориям на
-              каждом из 7 серверов. Дополнительно публикуем глобальные таблицы с лучшими из
-              лучших со всей Province.
+    <main class="profile-page">
+      <div class="container">
+        <section class="profile-card">
+          <img
+            class="profile-avatar"
+            src="https://api.dicebear.com/9.x/thumbs/svg?seed=Danila_Frost"
+            alt="Аватар участника"
+          />
+          <div class="profile-main">
+            <p class="player-tag">Участник рейтинга • Сервер 3</p>
+            <h1>Danila_Frost</h1>
+            <p class="player-role">Старший администратор / Лидер</p>
+            <div class="profile-rating-row">
+              <span class="rating-stars" aria-label="Оценка 8 из 10">
+                <span class="filled">★</span><span class="filled">★</span><span class="filled">★</span
+                ><span class="filled">★</span><span class="filled">★</span><span class="filled">★</span
+                ><span class="filled">★</span><span class="filled">★</span><span>★</span><span>★</span>
+              </span>
+              <strong>8.0 / 10</strong>
+              <span class="badge positive">Отзывы в основном положительные</span>
+            </div>
+            <p class="player-description">
+              Ответственный и активный игрок, помогает новичкам и следит за порядком на сервере.
+              Участвует в развитии фракции, быстро реагирует на обращения и проводит мероприятия
+              для сообщества.
             </p>
           </div>
+        </section>
 
-          <div class="feature-card">
-            <h2>Почему ProvinceRate?</h2>
-            <ul>
-              <li>Статистика и рейтинги по всем 7 серверам проекта.</li>
-              <li>Работаем с 2026 года и регулярно обновляем данные.</li>
-              <li>Честное составление рейтингов на основе оценок сообщества.</li>
-              <li>Независимый подход без привязки к внутриигровым структурам.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="ratings-section" id="top-ratings">
-        <div class="container">
+        <section class="reviews-section">
           <div class="section-head">
-            <h2>Глобальный рейтинг администрации</h2>
-            <p>Топ-10 администраторов со всех серверов Province по оценкам игроков.</p>
+            <h2>Оставить отзыв</h2>
+            <p>Оцените игрока по 10-балльной шкале и при желании добавьте ссылку на медиа.</p>
           </div>
 
-          <div class="table-wrap" role="region" aria-label="Таблица рейтинга администрации">
-            <table>
-              <thead>
-                <tr>
-                  <th>Место</th>
-                  <th>Администратор</th>
-                  <th>Должность</th>
-                  <th>Оценка</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Artemiy_Volkov</td>
-                  <td>Главный администратор</td>
-                  <td><span class="rating">★ 9.92</span></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Denis_Sobolev</td>
-                  <td>Куратор администрации</td>
-                  <td><span class="rating">★ 9.88</span></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Kirill_Morozov</td>
-                  <td>Старший администратор</td>
-                  <td><span class="rating">★ 9.81</span></td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Andrey_Gromov</td>
-                  <td>Администратор</td>
-                  <td><span class="rating">★ 9.76</span></td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Maksim_Kozlov</td>
-                  <td>Администратор</td>
-                  <td><span class="rating">★ 9.70</span></td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Vladimir_Romanov</td>
-                  <td>Модератор</td>
-                  <td><span class="rating">★ 9.64</span></td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Nikita_Kolesnik</td>
-                  <td>Модератор</td>
-                  <td><span class="rating">★ 9.58</span></td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>Ilya_Yermakov</td>
-                  <td>Старший модератор</td>
-                  <td><span class="rating">★ 9.50</span></td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>Roman_Zorin</td>
-                  <td>Администратор</td>
-                  <td><span class="rating">★ 9.46</span></td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Sergey_Anisimov</td>
-                  <td>Модератор</td>
-                  <td><span class="rating">★ 9.41</span></td>
-                </tr>
-              </tbody>
-            </table>
+          <form id="review-form" class="review-form">
+            <label class="field">
+              Текст отзыва
+              <textarea
+                id="review-text"
+                placeholder="Например: Администратор быстро помог решить спорную ситуацию."
+                required
+              ></textarea>
+            </label>
+
+            <div class="field">
+              Оценка
+              <div id="rating-input" class="star-picker" aria-label="Выбор оценки"></div>
+            </div>
+
+            <div id="category-ratings" class="category-box hidden">
+              <p class="category-title">Оценка по категориям</p>
+              <label>
+                Администратор
+                <input type="number" min="1" max="10" value="5" />
+              </label>
+              <label>
+                Лидер
+                <input type="number" min="1" max="10" value="10" />
+              </label>
+            </div>
+
+            <div class="form-grid">
+              <label class="field inline">
+                Ссылка на фото/видео
+                <input id="review-link" type="url" placeholder="https://..." />
+              </label>
+
+              <label class="field inline">
+                Тон отзыва
+                <select id="review-tone">
+                  <option value="positive">Положительный</option>
+                  <option value="negative">Отрицательный</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="checkbox">
+              <input id="review-anon" type="checkbox" />
+              Сделать отзыв анонимным
+            </label>
+
+            <button class="submit-btn" type="submit">Отправить</button>
+          </form>
+        </section>
+
+        <section class="reviews-section">
+          <div class="section-head">
+            <h2>Отзывы</h2>
+            <p>Все отправленные отзывы с оценками, отметками и реакциями.</p>
           </div>
 
-          <a href="#" class="details-link">Перейти к подробному рейтингу администрации →</a>
-        </div>
-      </section>
+          <div id="reviews-list" class="reviews-list">
+            <article class="review-item" data-likes="14">
+              <header>
+                <div class="author">
+                  <img src="https://api.dicebear.com/9.x/thumbs/svg?seed=Mark" alt="Аватар автора" />
+                  <div>
+                    <strong>Mark_Stone</strong>
+                    <span>2 часа назад</span>
+                  </div>
+                </div>
+                <span class="badge positive">Положительный</span>
+              </header>
+              <p>Отличный администратор, без лишних вопросов помог разобраться в ситуации.</p>
+              <div class="review-meta">
+                <span>Оценка: ★★★★★★★★☆☆ (8/10)</span>
+                <span>Администратор: 8/10 • Лидер: 9/10</span>
+                <a href="#">Ссылка на доказательство</a>
+              </div>
+              <div class="review-actions">
+                <button class="like-btn" type="button">👍 14</button>
+                <button class="delete-btn" type="button">Удалить</button>
+              </div>
+            </article>
+
+            <article class="review-item" data-likes="2">
+              <header>
+                <div class="author">
+                  <img src="https://api.dicebear.com/9.x/thumbs/svg?seed=Anon" alt="Аватар автора" />
+                  <div>
+                    <strong>Аноним</strong>
+                    <span>1 день назад</span>
+                  </div>
+                </div>
+                <span class="badge negative">Отрицательный</span>
+              </header>
+              <p>Иногда отвечает слишком долго, хотелось бы больше активности в вечернее время.</p>
+              <div class="review-meta">
+                <span>Оценка: ★★★★★★☆☆☆☆ (6/10)</span>
+                <span>Администратор: 6/10 • Лидер: 7/10</span>
+              </div>
+              <div class="review-actions">
+                <button class="like-btn" type="button">👍 2</button>
+                <button class="delete-btn" type="button">Удалить</button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="site-footer">
@@ -184,6 +215,7 @@
         </div>
       </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
