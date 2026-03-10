@@ -66,8 +66,12 @@
             alt="Аватар участника"
           />
           <div class="profile-main">
-            <p class="player-tag">Участник рейтинга • Сервер 3</p>
+            <div class="profile-meta-top">
+              <span class="status-pill status-member">Участник рейтинга</span>
+              <span class="premium-pill" aria-label="Премиум аккаунт активен">Premium</span>
+            </div>
             <h1>Danila_Frost</h1>
+            <p class="player-main-server">Основной сервер: <strong>Сервер 3</strong> • Ник: <strong>Danila_Frost</strong></p>
             <p class="player-role">Старший администратор / Лидер</p>
             <div class="profile-rating-row">
               <span class="rating-stars" aria-label="Оценка 8 из 10">
@@ -78,11 +82,21 @@
               <strong>8.0 / 10</strong>
               <span class="badge positive">Отзывы в основном положительные</span>
             </div>
-            <p class="player-description">
-              Ответственный и активный игрок, помогает новичкам и следит за порядком на сервере.
-              Участвует в развитии фракции, быстро реагирует на обращения и проводит мероприятия
-              для сообщества.
-            </p>
+            <details class="server-accordion" aria-label="Дополнительные серверы игрока">
+              <summary>
+                Дополнительные серверы
+                <span class="server-count">7 профилей</span>
+              </summary>
+              <ul class="server-list">
+                <li><span class="server-name">Сервер 1 — FrostHelper</span> <span class="server-note">Наставник для новичков и мини-гайды.</span></li>
+                <li><span class="server-name">Сервер 2 — D_FrostSupport</span> <span class="server-note">Тренировки и вечерние активности фракции.</span></li>
+                <li><span class="server-name">Сервер 3 — Danila_Frost</span> <span class="server-note">Контроль порядка и работа с обращениями.</span></li>
+                <li><span class="server-name">Сервер 4 — FrostDispatcher</span> <span class="server-note">Координация РП-событий и дежурств.</span></li>
+                <li><span class="server-name">Сервер 5 — FrostLead</span> <span class="server-note">Модерация крупных внутрисерверных ивентов.</span></li>
+                <li><span class="server-name">Сервер 6 — FrostMedia</span> <span class="server-note">Сбор медиа-доказательств и отчеты команды.</span></li>
+                <li><span class="server-name">Сервер 7 — FrostReserve</span> <span class="server-note">Резервный аккаунт для сезонных рейтингов.</span></li>
+              </ul>
+            </details>
           </div>
         </section>
 
