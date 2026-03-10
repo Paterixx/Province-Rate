@@ -167,25 +167,82 @@ body {
 }
 
 .profile-card {
-  padding: 24px;
+  padding: 26px;
   display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 22px;
+  grid-template-columns: 132px 1fr;
+  gap: 24px;
   margin-bottom: 28px;
+  background: radial-gradient(circle at 5% 5%, rgb(104 142 255 / 14%), transparent 45%),
+    linear-gradient(140deg, #1a2442 0%, #0f162c 100%);
 }
 
 .profile-avatar {
-  width: 120px;
-  height: 120px;
+  width: 132px;
+  height: 132px;
   border-radius: 50%;
-  border: 3px solid #4f79e8;
+  border: 3px solid #5f86f5;
   object-fit: cover;
+  box-shadow: 0 0 0 6px rgb(77 125 255 / 16%);
 }
 
-.player-tag {
+.profile-main {
+  display: grid;
+  gap: 10px;
+}
+
+.profile-meta-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.status-pill,
+.premium-pill {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
+.status-member {
+  color: #dce8ff;
+  background: linear-gradient(90deg, rgb(80 121 255 / 28%), rgb(127 95 255 / 25%));
+  border: 1px solid rgb(122 153 255 / 55%);
+}
+
+
+.status-user {
+  color: #d7e1ff;
+  background: rgb(96 122 191 / 24%);
+  border: 1px solid rgb(120 145 214 / 45%);
+}
+
+.status-moderator {
+  color: #ddffec;
+  background: rgb(88 209 146 / 20%);
+  border: 1px solid rgb(88 209 146 / 45%);
+}
+
+.status-admin {
+  color: #ffe7ed;
+  background: rgb(255 107 134 / 20%);
+  border: 1px solid rgb(255 107 134 / 45%);
+}
+
+.premium-pill {
+  color: #362400;
+  background: linear-gradient(90deg, #ffd66b, #ffb74d);
+  border: 1px solid #ffdc8a;
+  box-shadow: 0 6px 14px rgb(255 196 67 / 30%);
+}
+
+.player-main-server {
   margin: 0;
-  color: var(--muted);
-  font-size: 14px;
+  color: #d2ddff;
+  font-size: 15px;
 }
 
 h1 {
@@ -236,10 +293,61 @@ h1 {
   border: 1px solid rgb(255 107 134 / 45%);
 }
 
-.player-description {
-  margin: 16px 0 0;
+.server-accordion {
+  margin-top: 6px;
+  border-radius: 12px;
+  border: 1px solid #304779;
+  background: rgb(10 16 33 / 60%);
+}
+
+.server-accordion summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 12px 14px;
+  font-weight: 600;
+  color: #d4e1ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.server-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.server-count {
   color: var(--muted);
-  line-height: 1.65;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.server-list {
+  margin: 0;
+  padding: 0 14px 14px;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.server-list li {
+  padding: 9px 10px;
+  border-radius: 9px;
+  background: rgb(22 33 62 / 35%);
+  border: 1px solid rgb(57 79 136 / 45%);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.server-name {
+  font-weight: 600;
+  color: #dce7ff;
+  font-size: 14px;
+}
+
+.server-note {
+  color: #9fb1df;
+  font-size: 13px;
 }
 
 .reviews-section {
