@@ -207,6 +207,13 @@ h1 {
   align-items: center;
 }
 
+.profile-marks {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .rating-stars {
   color: #4a5f91;
   letter-spacing: 2px;
@@ -224,16 +231,34 @@ h1 {
   font-weight: 700;
 }
 
-.badge.positive {
-  color: #ddffec;
-  background: rgb(88 209 146 / 20%);
-  border: 1px solid rgb(88 209 146 / 45%);
+.badge.negative {
+  color: #ffe6e8;
+  background: rgb(255 96 119 / 20%);
+  border: 1px solid rgb(255 96 119 / 45%);
 }
 
-.badge.negative {
-  color: #ffe7ed;
-  background: rgb(255 107 134 / 20%);
-  border: 1px solid rgb(255 107 134 / 45%);
+.badge.mostly-negative {
+  color: #ffeedc;
+  background: rgb(255 156 107 / 18%);
+  border: 1px solid rgb(255 156 107 / 42%);
+}
+
+.badge.mixed {
+  color: #fff3d8;
+  background: rgb(255 200 87 / 18%);
+  border: 1px solid rgb(255 200 87 / 40%);
+}
+
+.badge.mostly-positive {
+  color: #e3ffe9;
+  background: rgb(126 224 154 / 18%);
+  border: 1px solid rgb(126 224 154 / 40%);
+}
+
+.badge.positive {
+  color: #dbffed;
+  background: rgb(66 214 144 / 22%);
+  border: 1px solid rgb(66 214 144 / 48%);
 }
 
 .player-description {
